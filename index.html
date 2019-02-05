@@ -23,18 +23,18 @@
             <div style="background-color: #0C0B34" class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
                 <button class="uk-modal-close-outside" type="button" uk-close></button>
 
-                <form name="contact" , method="POST" , data-netlify="true" , netlify-honeypot="bot-field">
+                <form name="contact", method="POST" , data-netlify="true" , netlify-honeypot="bot-field" netlify>
                     <p class="uk-hidden">
                         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                     </p>
-                    <input class="uk-input uk-form-blank uk-form-width-medium" style="margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; color: black"
-                        type="text" name="email" placeholder="E-mail">
-                    <input class="uk-input uk-form-blank uk-form-width-medium" style="margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; color: black"
-                        type="text" name="name" placeholder="Name">
-                    <input class="uk-input uk-form-blank uk-form-width-medium" style="margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; color: black"
-                        type="text" name="subject" placeholder="Subject">
-                    <input class="uk-input uk-form-blank uk-form-width-large" style="height: 200px; margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; color: black"
-                        type="text" name="message" placeholder="Message">
+                    <input class="uk-input uk-form-blank uk-form-width-medium" style="margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; "
+                        type="text" name="email" placeholder="E-mail" required>
+                    <input class="uk-input uk-form-blank uk-form-width-medium" style="margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; "
+                        type="text" name="name" placeholder="Name" required>
+                    <input class="uk-input uk-form-blank uk-form-width-medium" style="margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; "
+                        type="text" name="subject" placeholder="Subject" required>
+                    <input class="uk-input uk-form-blank uk-form-width-large" style="height: 200px; margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; "
+                        type="text" name="message" placeholder="Message" required>
                    
                     <div data-netlify-recaptcha="true"></div> <br>
                     <button class="uk-button uk-button-danger" style="margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; color: white" type="submit">Submit</button>
