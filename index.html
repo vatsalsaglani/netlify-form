@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- @import url('https://fonts.googleapis.com/css?family=Righteous'); -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
+    <title>Netlify-Form</title>
+</head>
+
+<body>
+    <section id="form-section">
+        <a href="#form-modal" class="uk-button uk-button-default" uk-toggle>CONTANT</a>
+
+
+
+        <div id="form-modal" class="uk-flex-top" uk-modal>
+            <div style="background-color: #0C0B34" class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+
+                <form name="contact" , method="POST" , data-netlify="true" , netlify-honeypot="bot-field">
+                    <p class="uk-hidden">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    <input class="uk-input uk-form-blank uk-form-width-medium" style="margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; color: black"
+                        type="text" name="email" placeholder="E-mail">
+                    <input class="uk-input uk-form-blank uk-form-width-medium" style="margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; color: black"
+                        type="text" name="name" placeholder="Name">
+                    <input class="uk-input uk-form-blank uk-form-width-medium" style="margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; color: black"
+                        type="text" name="subject" placeholder="Subject">
+                    <input class="uk-input uk-form-blank uk-form-width-large" style="height: 200px; margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; color: black"
+                        type="text" name="message" placeholder="Message">
+                   
+                    <div data-netlify-recaptcha="true"></div> <br>
+                    <button class="uk-button uk-button-danger" style="margin-top: 10px; margin-bottom: 10px; font-family: 'Righteous', cursive; color: white" type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
