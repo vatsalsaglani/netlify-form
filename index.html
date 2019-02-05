@@ -15,7 +15,7 @@
 
 <body>
     <section id="form-section">
-        <a href="#form-modal" class="uk-button uk-button-default" uk-toggle>CONTANT</a>
+        <!-- <a href="#form-modal" class="uk-button uk-button-default" uk-toggle>CONTANT</a>
 
 
 
@@ -41,7 +41,19 @@
                 </form>
 
             </div>
-        </div>
+        </div> -->
+        <form name="contact" method="POST" netlify>
+                <label>What is your name?
+                  <input name="full-name" type="text" placeholder="Your full name" required>
+                </label>
+                <label>What is your email address?
+                  <input name="email-address" type="email" placeholder="Your email" required>
+                </label>
+                <label>What your message?
+                  <textarea name="message" type="text" placeholder="Your message..." required></textarea>
+                </label>
+                  <button type="submit" value="Submit" id="Form-submit">Submit</button>
+              </form>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
